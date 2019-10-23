@@ -10,22 +10,15 @@ let money,
 
     /* Функция стартует наш проект */
 
-/*
-let start = function(){
-    money = prompt('Ваш месячный доход?', '120000'); //задал вопрос в модальном окне
-        
-    while(isNaN(money) || money === '' || money === null){
-        money = prompt('Ваш месячный доход?', '120000');
-    }
-}
-start();
- */
 
-    /* do while - цикл */
-do{
-    money = prompt('Ваш месячный доход?', '120000'); 
-}
-while(isNaN(money) || money === '' || money === null);
+let start = function(){
+    do{ 
+        money = prompt('Ваш месячный доход?', '120000'); //задал вопрос в модальном окне
+    }    
+    while(isNaN(money) || money === '' || money === null)
+};
+start();
+ 
 
  /* Добавил проверку на валидность вводимых данных */ 
 let monthlyExpenses = prompt('Какие обязательные ежемесячные расходы у вас есть?'),
