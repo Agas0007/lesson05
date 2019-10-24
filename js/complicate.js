@@ -25,4 +25,3 @@ for (let i = 2; i <= simpleNum ; i++) { //
   }
   console.log( i ); // вывожу простые числа
 }
-
