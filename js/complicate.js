@@ -15,15 +15,14 @@ console.log(border);
 
 /* Вывести в столбик Все простые числа от 1 до 100 */
 
-let n = 100;
+let simpleNum = 100;
 
 nextPrime:
-for (let i = 2; i <= n; i++) { // Для всех i...
+for (let i = 2; i <= simpleNum ; i++) { // 
 
-  for (let j = 2; j < i; j++) { // проверить, делится ли число..
-    if (i % j == 0) continue nextPrime; // не подходит, берём следующее
+  for (let j = 2; j < i; j++) { // проверяю, делится число или нет
+    if (i % j == 0) continue nextPrime; // не подходит, берём следующее число
   }
-
-  console.log( i ); // простое число
+  console.log( i ); // вывожу простые числа
 }
 
