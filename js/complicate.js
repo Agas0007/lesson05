@@ -21,7 +21,9 @@ nextPrime:
 for (let i = 2; i <= simpleNum ; i++) { // 
 
   for (let j = 2; j < i; j++) { // проверяю, делится число или нет
-    if (i % j == 0) continue nextPrime; // не подходит, берём следующее число
+    if (i % j == 0){ 
+      continue nextPrime; // не подходит, берём следующее число
+    }
   }
-  console.log( i ); // вывожу простые числа
+console.log( i ); // вывожу простые числ
 }
